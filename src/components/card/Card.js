@@ -8,7 +8,7 @@ const CardContainer = ({ children }) => {
 const CardImage = () => {
   return (
     <div class={styles.imgContainer}>
-      <img src="/img/americano.png" class={styles.img} />
+      <img src="/img/americano.png" class={styles.img} alt="" />
     </div>
   );
 };
