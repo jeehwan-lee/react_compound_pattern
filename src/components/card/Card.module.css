@@ -1,0 +1,42 @@
+.container {
+  height: 400px;
+  margin: 30px 30px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.headerTitle {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.headerPrice {
+  font-size: 20px;
+  font-weight: 500;
+}
