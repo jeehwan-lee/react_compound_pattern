@@ -19,8 +19,12 @@ const Containerbody = () => {
           <Card.Image />
           <Card.Header>
             <Card.HeaderTitle />
-            <Card.headerPrice />
+            <Card.HeaderPrice />
           </Card.Header>
+          <Card.Content />
+          <Card.Footer>
+            <Card.Button />
+          </Card.Footer>
         </Card>
       ))}
     </div>
@@ -28,6 +32,6 @@ const Containerbody = () => {
 };
 
 export const Container = Object.assign(ContainerMain, {
-  header: ContainerHeader,
-  body: Containerbody,
+  Header: ContainerHeader,
+  Body: Containerbody,
 });

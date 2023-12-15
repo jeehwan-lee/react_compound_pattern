@@ -25,9 +25,29 @@ const CardHeaderPrice = () => {
   return <div class={styles.headerPrice}>3000원</div>;
 };
 
+const CardContent = () => {
+  return (
+    <div class={styles.content}>
+      이곳은 커피에 대한 정보를 담는곳으로 아주 긴 문장이 올 수도 있고
+      그렇습니다. 기네요
+    </div>
+  );
+};
+
+const CardFooter = ({ children }) => {
+  return <div class={styles.footer}>{children}</div>;
+};
+
+const CardButton = () => {
+  return <button class={styles.button}>Add to Cart</button>;
+};
+
 export const Card = Object.assign(CardContainer, {
   Image: CardImage,
   Header: CardHeader,
   HeaderTitle: CardHeaderTitle,
-  headerPrice: CardHeaderPrice,
+  HeaderPrice: CardHeaderPrice,
+  Content: CardContent,
+  Footer: CardFooter,
+  Button: CardButton,
 });
