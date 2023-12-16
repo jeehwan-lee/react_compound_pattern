@@ -4,6 +4,6 @@ export const fetchCoffeeList = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(coffeeData);
-    }, 1000);
+    }, 200);
   });
 };

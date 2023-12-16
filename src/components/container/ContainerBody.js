@@ -19,12 +19,7 @@ export const Containerbody = () => {
             <Card.Button
               soldOut={coffee.soldOut}
               render={() => {
-                return (
-                  <Card.SubContent>
-                    <Card.SubButton />
-                    <Card.SubButton />
-                  </Card.SubContent>
-                );
+                return <Card.SubContent subContent={coffee.subContent} />;
               }}
             ></Card.Button>
           </Card.Footer>
