@@ -16,13 +16,17 @@ export const Containerbody = () => {
           </Card.Header>
           <Card.Content content={coffee.content} />
           <Card.Footer>
-            <Card.Button soldOut={coffee.soldOut} />
-            {coffee.SubContent && (
-              <Card.SubContent>
-                <Card.SubButton />
-                <Card.SubButton />
-              </Card.SubContent>
-            )}
+            <Card.Button
+              soldOut={coffee.soldOut}
+              render={() => {
+                return (
+                  <Card.SubContent>
+                    <Card.SubButton />
+                    <Card.SubButton />
+                  </Card.SubContent>
+                );
+              }}
+            ></Card.Button>
           </Card.Footer>
         </Card>
       ))}
