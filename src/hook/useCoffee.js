@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchCoffeeList } from "../api/coffeeApi";
 
-export const useCoffee = () => {
+const useCoffee = () => {
   const [coffeeList, setCoffeeList] = useState([]);
 
   const getCoffeeList = async () => {
@@ -19,3 +19,5 @@ export const useCoffee = () => {
 
   return { coffeeList };
 };
+
+export default useCoffee;

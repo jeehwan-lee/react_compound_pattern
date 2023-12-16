@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./Container.module.css";
 import { Card } from "../card/Card";
+import useCoffee from "../../hook/useCoffee";
 
 export const Containerbody = () => {
-  const arr = [1, 2, 3, 4, 5];
+  const { coffeeList } = useCoffee();
   return (
     <div class={styles.body}>
-      {arr.map((item) => (
+      {coffeeList.map((coffee) => (
         <Card>
-          <Card.Image />
+          <Card.Image url={coffee.img} />
           <Card.Header>
             <Card.HeaderTitle />
             <Card.HeaderPrice />
