@@ -51,6 +51,7 @@
   margin-top: 10px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 .button {
@@ -69,4 +70,24 @@
 .button:hover {
   color: white;
   background-color: #faac92;
+}
+
+.subContent {
+  position: absolute;
+  top: 48px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subButton {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #f8faba;
+}
+
+.subButton:hover {
+  background-color: #ecee84;
 }

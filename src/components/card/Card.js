@@ -42,6 +42,19 @@ const CardButton = () => {
   return <button class={styles.button}>Add to Cart</button>;
 };
 
+const CardSubContent = ({ children }) => {
+  return <div class={styles.subContent}>{children}</div>;
+};
+
+const CardSubButton = () => {
+  return (
+    <div class={styles.subButton}>
+      <div>HOT</div>
+      <div>3000원</div>
+    </div>
+  );
+};
+
 export const Card = Object.assign(CardContainer, {
   Image: CardImage,
   Header: CardHeader,
@@ -50,4 +63,6 @@ export const Card = Object.assign(CardContainer, {
   Content: CardContent,
   Footer: CardFooter,
   Button: CardButton,
+  SubContent: CardSubContent,
+  SubButton: CardSubButton,
 });

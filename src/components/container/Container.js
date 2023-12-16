@@ -24,6 +24,10 @@ const Containerbody = () => {
           <Card.Content />
           <Card.Footer>
             <Card.Button />
+            <Card.SubContent>
+              <Card.SubButton />
+              <Card.SubButton />
+            </Card.SubContent>
           </Card.Footer>
         </Card>
       ))}
