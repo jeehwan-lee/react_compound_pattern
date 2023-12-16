@@ -11,16 +11,18 @@ export const Containerbody = () => {
         <Card>
           <Card.Image url={coffee.img} />
           <Card.Header>
-            <Card.HeaderTitle />
-            <Card.HeaderPrice />
+            <Card.HeaderTitle title={coffee.name} />
+            {coffee.price && <Card.HeaderPrice price={coffee.price} />}
           </Card.Header>
-          <Card.Content />
+          <Card.Content content={coffee.content} />
           <Card.Footer>
-            <Card.Button />
-            <Card.SubContent>
-              <Card.SubButton />
-              <Card.SubButton />
-            </Card.SubContent>
+            <Card.Button soldOut={coffee.soldOut} />
+            {coffee.SubContent && (
+              <Card.SubContent>
+                <Card.SubButton />
+                <Card.SubButton />
+              </Card.SubContent>
+            )}
           </Card.Footer>
         </Card>
       ))}
