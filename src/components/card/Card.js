@@ -1,58 +1,17 @@
 import React from "react";
 import styles from "./Card.module.css";
+import { CardImage } from "./CardImage";
+import { CardHeader } from "./CardHeader";
+import { CardHeaderTitle } from "./CardHeaderTitle";
+import { CardContent } from "./CardContent";
+import { CardFooter } from "./CardFooter";
+import { CardButton } from "./CardButton";
+import { CardSubContent } from "./CardSubContent";
+import { CardHeaderPrice } from "./CardHeaderPrice";
+import { CardSubButton } from "./CardSubButton";
 
 const CardContainer = ({ children }) => {
   return <div class={styles.container}>{children}</div>;
-};
-
-const CardImage = () => {
-  return (
-    <div class={styles.imgContainer}>
-      <img src="/img/americano.png" class={styles.img} alt="" />
-    </div>
-  );
-};
-
-const CardHeader = ({ children }) => {
-  return <div class={styles.header}>{children}</div>;
-};
-
-const CardHeaderTitle = () => {
-  return <div class={styles.headerTitle}>Americano</div>;
-};
-
-const CardHeaderPrice = () => {
-  return <div class={styles.headerPrice}>3000원</div>;
-};
-
-const CardContent = () => {
-  return (
-    <div class={styles.content}>
-      이곳은 커피에 대한 정보를 담는곳으로 아주 긴 문장이 올 수도 있고
-      그렇습니다. 기네요
-    </div>
-  );
-};
-
-const CardFooter = ({ children }) => {
-  return <div class={styles.footer}>{children}</div>;
-};
-
-const CardButton = () => {
-  return <button class={styles.button}>Add to Cart</button>;
-};
-
-const CardSubContent = ({ children }) => {
-  return <div class={styles.subContent}>{children}</div>;
-};
-
-const CardSubButton = () => {
-  return (
-    <div class={styles.subButton}>
-      <div>HOT</div>
-      <div>3000원</div>
-    </div>
-  );
 };
 
 export const Card = Object.assign(CardContainer, {
