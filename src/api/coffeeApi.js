@@ -1,6 +1,6 @@
 import coffeeData from "../db/coffeeData.json";
 
-export const getCoffeeList = () => {
+export const fetchCoffeeList = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(coffeeData);
