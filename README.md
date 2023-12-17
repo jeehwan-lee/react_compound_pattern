@@ -89,7 +89,8 @@
 - subContent는 Hot 과 Cold 종류는 갖는 음료만 갖고 있습니다.
 
 - subContent를 갖는 경우, 해당 음료의 price와 soldOut은 null이며, subContent에서 데이터를 갖습니다.
-  
+
+```bash
 [
   {
     "id": 1,
@@ -112,3 +113,4 @@
     ]
   },
 ]
+```
