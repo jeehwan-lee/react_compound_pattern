@@ -38,14 +38,7 @@
 
 - 하위에는 Add To Cart 버튼을 통해 장바구니에 추가하며, 품절일 경우 Sold Out 버튼을 보여줍니다.
 
-<figure class="align-center">
-  <img src="https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8af030a5-1f93-453a-8f52-f74d82b38998" alt="">
-  <img src="https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8e4ad367-d1f9-4777-bae7-c7486ac19bed" alt="">
-</figure> 
-
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8af030a5-1f93-453a-8f52-f74d82b38998)
-
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8e4ad367-d1f9-4777-bae7-c7486ac19bed)
+  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/f918c3ea-62eb-492e-a8e8-d454ce7afebe)
 
 - 장바구니 기능은 구현하지 않고 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구만 띄워줍니다.
 
