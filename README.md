@@ -36,11 +36,11 @@
 
 - 카드에 들어가는 정보는 이미지, 음료명, 가격, 설명이 포함됩니다.
 
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/ddc53c28-bcd1-4dc8-9e8f-e6348f48d0cc)
+  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8af030a5-1f93-453a-8f52-f74d82b38998)
 
 - 하위에는 Add To Cart 버튼을 통해 장바구니에 추가하며, 품절일 경우 Sold Out 버튼을 보여줍니다.
 
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/091a5eb1-53ff-48fa-85b0-c3489315d460)
+  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8e4ad367-d1f9-4777-bae7-c7486ac19bed)
 
 - 장바구니 기능은 구현하지 않고 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구만 띄워줍니다.
 
@@ -48,13 +48,13 @@
 
   카드에 가격을 표시하지 않고 드롭다운 형태로 Hot과 Cold의 가격을 표시합니다.
 
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/ae1fca47-29f2-4c65-be59-3f172b9103ed)
+  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/b6e0a8ce-f2af-41fb-8410-8eeee1ba19e1)
 
 - Hot or Cold? 버튼을 클릭하면 드롭다운 형태로 Hot의 가격과 Cold의 가격을 보여줍니다.
 
 - Hot 또는 Cold가 품절일 경우 가격 대신 Sold Out 문구를 보여주며, 해당 드롭다운 내용을 클릭할 수 있습니다.
 
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/f06c6844-5bdf-4f8f-834e-aa02e2a4fa10)
+  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/9bf50beb-69d2-4aea-adbc-8d2b8a8b0718)
 
 - 해당 내용을 클릭하면 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구를 띄워줍니다.
 
@@ -66,31 +66,51 @@
 
   - React
 
-
 ## 구조 및 설계
 
 ### 1. 프로젝트 구조
 
 ```bash
-├── app.js
-├── config
-│   ├── db.js
-│   └── handlebars_helpers.js
-├── controllers
-│   ├── post_controller.js
-│   └── refly_controller.js
-├── routes
-│   ├── post.js
-│   └── refly.js
-├── services
-│   ├── post_service.js
-│   └── refly_service.js
-├── views
-│   ├── layouts
-│       └── main.handlebars
-│   ├── detail.handlebars
-│   ├── home.handlebars
-│   ├── modify.handlebars
-│   └── write.handlebars
-└── public
+├── node_modules
+├── public
+└── src
+    ├── api
+    ├── components
+        ├── card
+        └── container
+    ├── db
+    ├── hook
+    ├── index.js
+    └── App.js
 ```
+
+### 2. 데이터
+
+- 데이터는 아래와 같습니다.
+
+- subContent는 Hot 과 Cold 종류는 갖는 음료만 갖고 있습니다.
+
+- subContent를 갖는 경우, 해당 음료의 price와 soldOut은 null이며, subContent에서 데이터를 갖습니다.
+  
+[
+  {
+    "id": 1,
+    "name": "Espresso",
+    "content": "볶은 커피를 곱게 분쇄하여 고압의 물을 사용하여 짧은 시간 동안 추출한 음료입니다.",
+    "price": "3000",
+    "img": "/img/espresso.png",
+    "soldOut": "N"
+  },
+  {
+    "id": 2,
+    "name": "Americano",
+    "content": "에스프레소 샷 두 개를 추출해 뜨거운 물을 재빠르게 부어 만든 음료입니다.",
+    "price": null,
+    "img": "/img/americano.png",
+    "soldOut": null,
+    "subContent": [
+      { "id": 1, "name": "HOT", "price": "3500", "soldOut": "N" },
+      { "id": 2, "name": "COLD", "price": "4000", "soldOut": "N" }
+    ]
+  },
+]
