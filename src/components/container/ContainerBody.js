@@ -5,6 +5,7 @@ import useCoffee from "../../hook/useCoffee";
 
 export const Containerbody = () => {
   const { coffeeList } = useCoffee();
+
   return (
     <div class={styles.body}>
       {coffeeList.map((coffee) => (
@@ -18,8 +19,18 @@ export const Containerbody = () => {
           <Card.Footer>
             <Card.Button
               soldOut={coffee.soldOut}
-              render={() => {
-                return <Card.SubContent subContent={coffee.subContent} />;
+              render={(setOpenSubContent) => {
+                return (
+                  <Card.SubContent>
+                    {coffee.subContent &&
+                      coffee.subContent.map((content) => (
+                        <Card.SubButton
+                          content={content}
+                          setOpenSubContent={setOpenSubContent}
+                        />
+                      ))}
+                  </Card.SubContent>
+                );
               }}
             ></Card.Button>
           </Card.Footer>

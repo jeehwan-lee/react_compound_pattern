@@ -5,9 +5,9 @@ export const CardButton = ({ soldOut, render }) => {
   const [openSubContent, setOpenSubContent] = useState(false);
 
   const handleClick = () => {
-    setOpenSubContent(!openSubContent);
-
     if (!soldOut) {
+      // subContent(HOT,COLD) 데이터가 있을 경우 : soldOut = null
+      setOpenSubContent(!openSubContent);
       return;
     }
 
@@ -23,7 +23,7 @@ export const CardButton = ({ soldOut, render }) => {
       <button class={styles.button} onClick={handleClick}>
         {soldOut === "Y" ? "Sold Out" : "Add To Cart"}
       </button>
-      {openSubContent && render()}
+      {openSubContent && render(setOpenSubContent)}
     </>
   );
 };
