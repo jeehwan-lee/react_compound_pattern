@@ -2,6 +2,8 @@
 
 > React Compound Pattern을 구현하고 적용해보기 위한 프로젝트입니다.
 
+[React Compound Pattern 연습](https://master--zesty-nasturtium-afef2b.netlify.app/)
+
 ## 목차
 
 - [들어가며](#들어가며)
