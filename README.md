@@ -10,8 +10,6 @@
 
   - [요구사항](#2-요구사항)
 
-  - [사용기술](#3-사용기술)
-
 - [구조 및 설계](#구조-및-설계)
 
   - [프로젝트 구조](#1-프로젝트-구조)
@@ -40,7 +38,9 @@ Compound Component Pattern을 직접 구현하고 적용해보기 위해 요구�
 
   ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/f918c3ea-62eb-492e-a8e8-d454ce7afebe)
 
-- 장바구니는 구현하지 않고 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구만 띄워줍니다.
+- 장바구니 기능은 구현하지 않고 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 라는
+
+  문구만 띄워줍니다.
 
 - 만약, 음료가 Hot과 Cold 두 가지 종류가 있다면 위 버튼이 아닌 Hot or Cold? 라는 문구를 갖는 버튼을 보여주며,
 
@@ -53,14 +53,6 @@ Compound Component Pattern을 직접 구현하고 적용해보기 위해 요구�
   ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/6a42c779-c143-49be-90ff-8f74c28366c8)
 
 - 해당 내용을 클릭하면 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구를 띄워줍니다.
-
-### 3. 사용기술
-
-  - HTML
-
-  - Javascript
-
-  - React
 
 ## 구조 및 설계
 
