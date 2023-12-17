@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Card.module.css";
 
 export const CardSubButton = ({ content, setOpenSubContent }) => {
@@ -8,7 +8,6 @@ export const CardSubButton = ({ content, setOpenSubContent }) => {
     } else {
       alert("품절된 상품입니다.");
     }
-
     setOpenSubContent(false);
   };
 

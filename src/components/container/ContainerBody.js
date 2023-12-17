@@ -17,22 +17,24 @@ export const Containerbody = () => {
           </Card.Header>
           <Card.Content content={coffee.content} />
           <Card.Footer>
-            <Card.Button
-              soldOut={coffee.soldOut}
-              render={(setOpenSubContent) => {
-                return (
-                  <Card.SubContent>
-                    {coffee.subContent &&
-                      coffee.subContent.map((content) => (
+            {coffee.subContent ? (
+              <Card.DropDownButton
+                render={(setOpenSubContent) => {
+                  return (
+                    <Card.SubContent>
+                      {coffee.subContent.map((content) => (
                         <Card.SubButton
                           content={content}
                           setOpenSubContent={setOpenSubContent}
                         />
                       ))}
-                  </Card.SubContent>
-                );
-              }}
-            ></Card.Button>
+                    </Card.SubContent>
+                  );
+                }}
+              />
+            ) : (
+              <Card.Button soldOut={coffee.soldOut} />
+            )}
           </Card.Footer>
         </Card>
       ))}

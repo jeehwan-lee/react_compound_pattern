@@ -9,6 +9,7 @@ import { CardButton } from "./CardButton";
 import { CardSubContent } from "./CardSubContent";
 import { CardHeaderPrice } from "./CardHeaderPrice";
 import { CardSubButton } from "./CardSubButton";
+import { CardDropDownButton } from "./CardDropDownButton";
 
 const CardContainer = ({ children }) => {
   return <div class={styles.container}>{children}</div>;
@@ -22,6 +23,7 @@ export const Card = Object.assign(CardContainer, {
   Content: CardContent,
   Footer: CardFooter,
   Button: CardButton,
+  DropDownButton: CardDropDownButton,
   SubContent: CardSubContent,
   SubButton: CardSubButton,
 });
