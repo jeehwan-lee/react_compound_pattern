@@ -36,14 +36,9 @@
 
 - 카드에 들어가는 정보는 이미지, 음료명, 가격, 설명이 포함됩니다.
 
-<details>
-<summary>메인 페이지</summary>
-
-![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8af030a5-1f93-453a-8f52-f74d82b38998)
-
-</details>
-
 - 하위에는 Add To Cart 버튼을 통해 장바구니에 추가하며, 품절일 경우 Sold Out 버튼을 보여줍니다.
+
+  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8af030a5-1f93-453a-8f52-f74d82b38998)
 
   ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/8e4ad367-d1f9-4777-bae7-c7486ac19bed)
 
