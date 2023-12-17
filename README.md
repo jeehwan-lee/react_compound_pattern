@@ -40,19 +40,17 @@
 
   ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/f918c3ea-62eb-492e-a8e8-d454ce7afebe)
 
-- 장바구니 기능은 구현하지 않고 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구만 띄워줍니다.
+- 장바구니는 구현하지 않고 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구만 띄워줍니다.
 
 - 만약, 음료가 Hot과 Cold 두 가지 종류가 있다면 위 버튼이 아닌 Hot or Cold? 라는 문구를 갖는 버튼을 보여주며,
 
   카드에 가격을 표시하지 않고 드롭다운 형태로 Hot과 Cold의 가격을 표시합니다.
 
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/b6e0a8ce-f2af-41fb-8410-8eeee1ba19e1)
-
 - Hot or Cold? 버튼을 클릭하면 드롭다운 형태로 Hot의 가격과 Cold의 가격을 보여줍니다.
 
 - Hot 또는 Cold가 품절일 경우 가격 대신 Sold Out 문구를 보여주며, 해당 드롭다운 내용을 클릭할 수 있습니다.
 
-  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/9bf50beb-69d2-4aea-adbc-8d2b8a8b0718)
+  ![image](https://github.com/jeehwan-lee/react_compound_pattern/assets/26796099/6a42c779-c143-49be-90ff-8f74c28366c8)
 
 - 해당 내용을 클릭하면 Alert창을 통해 "장바구니에 추가되었습니다" 또는 "품절되었습니다" 문구를 띄워줍니다.
 
