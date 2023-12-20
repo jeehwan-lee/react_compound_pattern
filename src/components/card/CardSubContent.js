@@ -3,9 +3,5 @@ import styles from "./Card.module.css";
 import { Card } from "./Card";
 
 export const CardSubContent = ({ children }) => {
-  return (
-    <div class={styles.subContent} onBlur={() => console.log("heee")}>
-      {children}
-    </div>
-  );
+  return <div class={styles.subContent}>{children}</div>;
 };
